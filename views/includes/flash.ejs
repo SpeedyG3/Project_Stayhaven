@@ -1,0 +1,30 @@
+<style>
+    .custom-alert {
+        max-width: 80%; /* Adjust as needed */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+</style>
+
+<% if (success && success.length) { %>
+    <div class="alert alert-info alert-dismissible fade show mt-1 custom-alert" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+<% if (deleted && deleted.length) { %>
+    <div class="alert alert-dark alert-dismissible fade show mt-1 custom-alert" role="alert">
+        <%= deleted %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+<% if (error && error.length) { %>
+    <div class="alert alert-danger alert-dismissible fade show mt-1 custom-alert" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>

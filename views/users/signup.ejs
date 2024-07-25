@@ -1,0 +1,41 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+    .vertical-center {
+        min-height: 100vh; /* Ensure full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10vh;
+    }
+</style>
+
+<div class="container">
+    <div class="row vertical-center">
+        <div class="col-md-6">
+            <h3>SignUp on StayHaven!</h3>
+            <form action="/signup" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Nah!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Nah!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Nah!</div>
+                </div>
+                <div class="mb-4">
+                    <button class="btn btn-lg btn-dark add-btn"><i class="fa-solid fa-circle-check"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

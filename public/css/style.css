@@ -1,0 +1,147 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 4rem;
+    /* border:  */
+    background-color: white;
+}
+
+.fa-meteor{
+    color: #4535C1;
+    font-size: 2.5rem;
+}
+
+.nav-link{
+    color: #000000 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-links a {
+    margin: 0 10px; /* Adjust the margin value as needed */
+}
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.f-info-socials a{
+    text-decoration: none;
+    color: inherit;
+    /* color: #212529; */
+}
+
+.f-info{
+    text-align: center;
+    height: 6rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* CARDS */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 2em !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* card effect */
+.onHover {
+    transition: transform 0.25s;
+}
+
+.onHover:hover {
+    transform: scale(1.03);
+}
+
+.add-btn{
+    border: none !important;
+    background-color: #4535C1 !important;
+}
+
+/* edit button and edit route done and styled with New route, add-btn itself */
+/* Show page */
+.show-img{
+    height: 40vh;
+}
+
+.changeBtns{
+    display: flex;
+}
+
+.editbtn{
+    background-color: #36C2CE !important;
+}
+
+.changeBtns button{
+    border: none !important;
+}
+
+.cmtBtn{
+    background-color: #478CCF !important;
+}
+
+.review-card{
+    border-radius: 5rem !important;
+    padding: 3rem 3rem 3rem;
+}
+
+.preview_img{
+    width: 300px !important;
+    height: 250px;
+}
+
+.navBtns {
+    border-radius: 2rem !important;
+    transition: border-radius 2s, background-color 0.3s; /* Apply transition to both properties */
+}
+
+.navBtns:hover {
+    background-color: #2E236C;
+    color: white !important;
+}
